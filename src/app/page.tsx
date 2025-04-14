@@ -43,10 +43,10 @@ export default function Home() {
           </div>
         </BackgroundLines>
       </section>
-      <section className="relative h-[400px] mx-auto">
+      <section className="relative h-min-[400px] mx-auto">
         <div className="flex flex-col gap-4 text-center h-full">
-          <h1 className="text-2xl font-bold h-full">
-            <HeroHighlight>
+          <HeroHighlight className="my-8">
+            <h1 className="text-xl font-medium h-full w-[85%] mx-auto">
               This is for the friday night hackers, the artists building new
               worlds, those who choose to explore just cuz. We're gathering{" "}
               <Highlight className="text-black dark:text-white">
@@ -55,10 +55,8 @@ export default function Home() {
               , even if you just started a day ago.
               <br />
               <br />
-              Passionate work deserves to be celebrated.
-              <br />
-              <br />
-              Join us to hear stories from people who make stuff they love.
+              Passionate work deserves to be celebrated. Join us to hear stories
+              from people who make stuff they love.
               <div className="pt-8">
                 <button className="relative inline-flex h-10 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -67,8 +65,8 @@ export default function Home() {
                   </span>
                 </button>
               </div>
-            </HeroHighlight>
-          </h1>
+            </h1>
+          </HeroHighlight>
         </div>
       </section>
       {/* <section>
@@ -108,7 +106,7 @@ export default function Home() {
       <section>
         <div className="flex flex-col gap-4 text-center">
           <h2 className="text-2xl font-bold">Our Sponsors</h2>
-          <div className="flex gap-4 justify-center items-center">
+          <div className="flex gap-4 justify-center items-center flex-wrap">
             <Image
               src="/Google Cloud Logo.png"
               alt="Sponsor 1"
@@ -120,7 +118,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className="mt-16 flex flex-col gap-4 text-center mb-8">
+      <footer className="mt-8 flex flex-col gap-4 text-center mb-8">
         <p>
           made with ❤️ by the{" "}
           <a href="/team" className="text-blue-500">
