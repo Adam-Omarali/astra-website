@@ -3,7 +3,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --light_yellow: #FFF9B3;
+  --light_purple: #D49CFF;
+  --dark_red: #79546E;
+  --dark_blue: #3D4A7D;
 }
+
+#grad1::before {
+  content: "";
+  position: absolute;
+  inset: -.625em;
+  mask-image: linear-gradient( transparent 88%, black 0%, transparent);
+  background: linear-gradient(to right, var(--dark_blue), var(--dark_red));
+  z-index: -1;
+}
+
 
 @theme inline {
   --color-background: var(--background);

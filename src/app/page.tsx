@@ -37,7 +37,7 @@ export default function Home() {
             <div className="pt-4 flex gap-4 font-sans text-neutral-700 dark:text-neutral-200">
               <Link href="https://lu.ma/5y7rfeci" target="_blank">
                 <button className="relative inline-flex h-10 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--light_purple)_0%,var(--dark_blue)_50%,var(--light_purple)_100%)]" />
                   <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-sm font-medium backdrop-blur-3xl">
                     Register
                   </span>
@@ -45,8 +45,8 @@ export default function Home() {
               </Link>
               <Link href="https://lu.ma/5y7rfeci" target="_blank">
                 <button className="relative inline-flex h-10 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-sm font-medium backdrop-blur-3xl">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--light_purple)_0%,var(--dark_blue)_50%,var(--light_purple)_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-sm font-medium backdrop-blur-3xl">
                     Demo
                   </span>
                 </button>
@@ -73,7 +73,7 @@ export default function Home() {
                 <div className="pt-8">
                   <Link href="https://lu.ma/5y7rfeci" target="_blank">
                     <button className="relative inline-flex h-10 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--light_purple)_0%,var(--dark_blue)_50%,var(--light_purple)_100%)]" />
                       <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-sm font-medium backdrop-blur-3xl">
                         Join us
                       </span>
@@ -95,7 +95,7 @@ export default function Home() {
                   "an all in one music instrument",
                   "a news app with pieces from around the world in your langauge",
                 ]}
-                duration={5000}
+                duration={3000}
               />{" "}
               <br />
               <Image
@@ -125,7 +125,7 @@ export default function Home() {
       </section>
       <div className="flex flex-col items-center justify-center mb-16">
         {/* <Image src="/star 2.png" alt="Astra" width={300} height={300} /> */}
-        <Image src="/logo+stars.png" alt="Astra" width={500} height={500} />
+        <Image src="/banner.png" alt="Astra" width={1400} height={400} />
       </div>
       <section>
         <div className="flex flex-col gap-4 text-center">
