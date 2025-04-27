@@ -1,7 +1,6 @@
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { FlipWords } from "@/components/ui/flip-words";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-import { Meteors } from "@/components/ui/meteors";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-brackground";
 import Image from "next/image";
@@ -12,7 +11,7 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center">
         <BackgroundLines>
           <div className="flex flex-col gap-10 items-center justify-center">
-            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-8 relative z-20 font-bold tracking-tight">
+            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-600 to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-8 relative z-20 font-bold tracking-tight">
               {/* <span className="text-6xl">Astra</span> <br /> */}
               <Image
                 src="/logo_transparent.png"
@@ -34,7 +33,7 @@ export default function Home() {
             </p>
             <ShootingStars />
             <StarsBackground starDensity={0.0005} />
-            <div className="pt-4 flex gap-4 font-sans text-neutral-700 dark:text-neutral-200">
+            <div className="pt-4 flex gap-4 font-sans text-neutral-200">
               <Link href="https://lu.ma/5y7rfeci" target="_blank">
                 <button className="relative inline-flex h-10 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--light_purple)_0%,var(--dark_blue)_50%,var(--light_purple)_100%)]" />
@@ -43,10 +42,10 @@ export default function Home() {
                   </span>
                 </button>
               </Link>
-              <Link href="https://lu.ma/5y7rfeci" target="_blank">
+              <Link href="/demo">
                 <button className="relative inline-flex h-10 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--light_purple)_0%,var(--dark_blue)_50%,var(--light_purple)_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-sm font-medium backdrop-blur-3xl">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--light_purple)_0%,var(--dark_blue)_50%,var(--light_purple)_100%)]" />
+                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-sm font-medium backdrop-blur-3xl">
                     Demo
                   </span>
                 </button>
@@ -62,7 +61,7 @@ export default function Home() {
               <h1 className="text-xl font-medium h-full w-[85%] mx-auto">
                 This is for the friday night hackers, the artists building new
                 worlds, those who choose to explore just cuz. We're gathering{" "}
-                <Highlight className="text-black dark:text-white">
+                <Highlight className="text-white">
                   everybody who makes stuff they love
                 </Highlight>
                 , even if you just started a day ago.
@@ -70,16 +69,16 @@ export default function Home() {
                 <br />
                 Passionate work deserves to be celebrated. Join us to hear
                 stories from people who make stuff they love.
-                <div className="pt-8">
-                  <Link href="https://lu.ma/5y7rfeci" target="_blank">
-                    <button className="relative inline-flex h-10 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--light_purple)_0%,var(--dark_blue)_50%,var(--light_purple)_100%)]" />
-                      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-sm font-medium backdrop-blur-3xl">
-                        Join us
-                      </span>
-                    </button>
-                  </Link>
-                </div>
+                <br />
+                <br />
+                <Link href="https://lu.ma/5y7rfeci" target="_blank">
+                  <button className="relative inline-flex h-10 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--light_purple)_0%,var(--dark_blue)_50%,var(--light_purple)_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-sm font-medium backdrop-blur-3xl">
+                      Join us
+                    </span>
+                  </button>
+                </Link>
               </h1>
             </HeroHighlight>
           </div>
@@ -90,10 +89,11 @@ export default function Home() {
               Come see{""}
               <FlipWords
                 words={[
+                  "a transformer built from scratch",
                   "a 5ft robot",
-                  "a video game made for pathological liars",
+                  "a video game for pathological liars",
                   "an all in one music instrument",
-                  "a news app with pieces from around the world in your langauge",
+                  "a news app that aggregates across languages",
                 ]}
                 duration={3000}
               />{" "}
@@ -111,11 +111,11 @@ export default function Home() {
         <section className="relative w-[80%] mx-auto mb-16 mt-8">
           <div className="flex flex-col gap-4 text-center">
             <h2 className="text-2xl font-bold">This is Astra</h2>
-            <p className="text-neutral-700 dark:text-neutral-400 text-lg">
+            <p className="text-neutral-400 text-lg">
               Ever since the dawn of humanity, humans have been drawn to the
               stars — it's almost axiomatic, and rightfully so.
             </p>
-            <p className="text-neutral-700 dark:text-neutral-400 text-lg">
+            <p className="text-neutral-400 text-lg">
               The stars represent opportunity, discovery, exploration,
               collaboration, and above all, creation— some of the most beautiful
               traits of humankind.
@@ -123,9 +123,19 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <div className="flex flex-col items-center justify-center mb-16">
+      <div className="flex flex-col items-center justify-center mb-4">
         {/* <Image src="/star 2.png" alt="Astra" width={300} height={300} /> */}
         <Image src="/banner.png" alt="Astra" width={1400} height={400} />
+      </div>
+      <div className="flex justify-center py-8">
+        <Link href="https://lu.ma/5y7rfeci" target="_blank">
+          <button className="relative inline-flex h-10 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--light_purple)_0%,var(--dark_blue)_50%,var(--light_purple)_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-sm font-medium backdrop-blur-3xl">
+              Sign up
+            </span>
+          </button>
+        </Link>
       </div>
       <section>
         <div className="flex flex-col gap-4 text-center">

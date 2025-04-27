@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --light_yellow: #FFF9B3;
   --light_purple: #D49CFF;
   --dark_red: #79546E;
@@ -16,21 +16,14 @@
   mask-image: linear-gradient( transparent 88%, black 0%, transparent);
   background: linear-gradient(to right, var(--dark_blue), var(--dark_red));
   z-index: -1;
+  opacity: 0.65;
 }
-
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -56,7 +49,6 @@ body {
     }
   }
 }
-
 
 @import "tailwindcss";
 
