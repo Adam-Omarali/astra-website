@@ -94,7 +94,7 @@ export default function Home() {
                   "a video game for pathological liars",
                   "an all in one music instrument",
                   "a news app that aggregates across languages",
-                  "insert your project here",
+                  "<insert your project here>",
                 ]}
                 duration={3000}
               />{" "}
@@ -159,7 +159,11 @@ export default function Home() {
           <a href="/team" className="text-blue-500">
             team
           </a>
-          . inspired by friends at socratica.
+          . inspired by{" "}
+          <a href="https://www.socratica.info/" className="text-blue-500">
+            socratica
+          </a>
+          .
         </p>
       </footer>
     </div>
