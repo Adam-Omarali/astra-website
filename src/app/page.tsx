@@ -11,7 +11,7 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center">
         <BackgroundLines>
           <div className="flex flex-col gap-10 items-center justify-center">
-            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-600 to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-8 relative z-20 font-bold tracking-tight">
+            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-600 to-white font-sans py-2 md:py-8 relative z-20 font-bold tracking-tight flex flex-col items-center justify-center">
               {/* <span className="text-6xl">Astra</span> <br /> */}
               <Image
                 src="/logo_transparent.png"
@@ -20,10 +20,10 @@ export default function Home() {
                 height={400}
               />
               <div className="flex flex-col gap-2 pt-8">
-                <span className="text-2xl">
+                <span className="text-3xl">
                   Toronto Young Builders Symposium
                 </span>
-                <span className="text-sm font-normal pt-0">June 24th 2025</span>
+                <span className="font-normal pt-0">June 24th 2025</span>
               </div>
             </h2>
 
