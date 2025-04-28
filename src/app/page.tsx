@@ -94,6 +94,7 @@ export default function Home() {
                   "a video game for pathological liars",
                   "an all in one music instrument",
                   "a news app that aggregates across languages",
+                  "insert your project here",
                 ]}
                 duration={3000}
               />{" "}
