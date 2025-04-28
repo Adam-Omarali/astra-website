@@ -23,7 +23,7 @@ export default function Home() {
                 <span className="text-2xl">
                   Toronto Young Builders Symposium
                 </span>
-                <span className="text-sm font-normal pt-0">June 2025</span>
+                <span className="text-sm font-normal pt-0">June 24th 2025</span>
               </div>
             </h2>
 
