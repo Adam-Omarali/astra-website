@@ -143,7 +143,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold">Our Sponsors</h2>
           <div className="flex gap-4 justify-center items-center flex-wrap">
             <Image src="/beta.png" alt="Sponsor 1" width={200} height={200} />
-            {/* <Image src="/inovia.png" alt="Sponsor 1" width={100} height={100} /> */}
+            <Image src="/inovia.png" alt="Sponsor 1" width={100} height={100} />
             <Image
               src="/panache.png"
               alt="Sponsor 1"
