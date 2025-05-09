@@ -32,14 +32,12 @@ function Demo() {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="w-full overflow-hidden bg-[#2a2728]">
       <iframe
         data-tally-src="https://tally.so/embed/wkg0qj?dynamicHeight=1"
         loading="lazy"
-        width="100%"
-        height="200"
         title="Astra Symposium Demos!!!"
-        className="w-full"
+        className="w-full h-full mb-4"
       />
     </div>
   );

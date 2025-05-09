@@ -56,8 +56,8 @@ export default function Home() {
       </section>
       <section>
         <section className="relative h-min-[400px] mx-auto">
-          <div className="flex flex-col gap-4 text-center h-full">
-            <HeroHighlight className="my-8">
+          <div className="flex flex-col gap-4 h-full">
+            <HeroHighlight className="my-8 flex flex-col items-center justify-center text-center">
               <h1 className="text-xl font-medium h-full w-[85%] mx-auto">
                 This is for the friday night hackers, the artists building new
                 worlds, those who choose to explore just cuz. We're gathering{" "}
@@ -109,18 +109,20 @@ export default function Home() {
             </h2>
           </div>
         </section>
-        <section className="relative w-[80%] mx-auto mb-16 mt-8">
-          <div className="flex flex-col gap-4 text-center">
-            <h2 className="text-2xl font-bold">This is Astra</h2>
-            <p className="text-neutral-400 text-lg">
-              Ever since the dawn of humanity, humans have been drawn to the
-              stars — it's almost axiomatic, and rightfully so.
-            </p>
-            <p className="text-neutral-400 text-lg">
-              The stars represent opportunity, discovery, exploration,
-              collaboration, and above all, creation— some of the most beautiful
-              traits of humankind.
-            </p>
+        <section className="relative mb-16 mt-8">
+          <div className="flex flex-col gap-4 text-center items-center justify-center">
+            <div className="w-[80%]">
+              <h2 className="text-2xl font-bold">This is Astra</h2>
+              <p className="text-neutral-400 text-lg">
+                Ever since the dawn of humanity, humans have been drawn to the
+                stars — it's almost axiomatic, and rightfully so.
+              </p>
+              <p className="text-neutral-400 text-lg">
+                The stars represent opportunity, discovery, exploration,
+                collaboration, and above all, creation— some of the most
+                beautiful traits of humankind.
+              </p>
+            </div>
           </div>
         </section>
       </section>
