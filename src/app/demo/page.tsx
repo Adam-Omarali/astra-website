@@ -37,7 +37,7 @@ function Demo() {
         data-tally-src="https://tally.so/embed/wkg0qj?dynamicHeight=1"
         loading="lazy"
         title="Astra Symposium Demos!!!"
-        className="w-full h-full mb-4"
+        className="w-full h-full mb-4 min-h-screen mt-8"
       />
     </div>
   );
